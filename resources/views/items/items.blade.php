@@ -1,7 +1,7 @@
 @extends('template')
 @section('title', 'Items')
 
-@section('isAdmin')
+@section('content')
 	<div class="container">
 		<div class="row">
 			<table>

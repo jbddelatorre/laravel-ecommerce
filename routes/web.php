@@ -18,3 +18,10 @@ Route::get('/', function () {
 Route::get('/showitems', 'ItemController@showItems');
 Route::delete('/deleteitem/{id}', 'ItemController@delete');
 
+Route::get('/categories', 'CategoryController@showCategories');
+Route::delete('/deletecategory/{id}', 'CategoryController@delete');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
